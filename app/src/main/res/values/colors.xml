@@ -6,7 +6,8 @@
     <color name="primaria">#F2130B</color>
     <color name="primariaVari">#7C005C</color>
     <color name="secundaria">#007C20</color>
-    <color name="fundo">#32302F</color>
+    <color name="fundo1">#00000000</color>
+    <color name="fundo2">#32302F</color>
     <color name="menuNav">@color/white</color>
 
 </resources>

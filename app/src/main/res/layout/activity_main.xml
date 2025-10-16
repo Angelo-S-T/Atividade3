@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/ImageCapa"
+        android:layout_width="0dp"
+        android:layout_height="317dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/thegoodplace2"
+        android:alpha="0.9"/>
+
     <TextView
         android:id="@+id/textViewSerie"
         android:layout_width="wrap_content"
@@ -14,6 +25,7 @@
         android:text="Série"
         android:textColor="@color/menuNav"
         android:textSize="14sp"
+        android:background="@color/fundo1"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewLogo"
         app:layout_constraintEnd_toStartOf="@+id/textViewFilmes"
         app:layout_constraintHorizontal_bias="0.5"
@@ -27,6 +39,7 @@
         android:text="Minha Lista"
         android:textColor="@color/menuNav"
         android:textSize="14sp"
+        android:background="@color/fundo1"
         app:layout_constraintBottom_toBottomOf="@+id/textViewFilmes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -38,7 +51,7 @@
         android:layout_width="45dp"
         android:layout_height="55dp"
         android:layout_marginTop="16dp"
-        android:background="#00FFFFFF"
+        android:background="@color/fundo1"
         app:layout_constraintEnd_toStartOf="@+id/textViewSerie"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,6 +65,7 @@
         android:text="Filmes"
         android:textColor="@color/menuNav"
         android:textSize="14sp"
+        android:background="@color/fundo1"
         app:layout_constraintBottom_toBottomOf="@+id/textViewSerie"
         app:layout_constraintEnd_toStartOf="@+id/textViewMinhaLista"
         app:layout_constraintHorizontal_bias="0.5"
@@ -62,7 +76,7 @@
         android:id="@+id/imageViewTheGoodPlace"
         android:layout_width="150dp"
         android:layout_height="100dp"
-
+        android:background="@color/fundo1"
         app:layout_constraintBottom_toBottomOf="@+id/guideline1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,6 +102,7 @@
         android:layout_height="wrap_content"
         android:text="Comédia"
         android:textColor="@color/menuNav"
+        android:background="@color/fundo1"
         app:layout_constraintBottom_toBottomOf="@+id/textViewEmpolgante"
         app:layout_constraintEnd_toStartOf="@+id/textViewEmpolgante"
         app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
@@ -101,6 +116,7 @@
         android:layout_marginTop="20dp"
         android:text="Empolgante"
         android:textColor="@color/menuNav"
+        android:background="@color/fundo1"
         app:layout_constraintEnd_toStartOf="@+id/textViewIrreverente"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textViewComedia"
@@ -112,6 +128,7 @@
         android:layout_height="wrap_content"
         android:text="Irreverente"
         android:textColor="@color/menuNav"
+        android:background="@color/fundo1"
         app:layout_constraintBottom_toBottomOf="@+id/textViewEmpolgante"
         app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
         app:layout_constraintStart_toEndOf="@+id/textViewEmpolgante"
@@ -135,9 +152,9 @@
         android:id="@+id/Assistir"
         android:layout_width="125dp"
         android:layout_height="51dp"
+        android:layout_marginTop="28dp"
         android:text="Assistir"
         android:textSize="10sp"
-        android:layout_marginTop="28dp"
         app:icon="@drawable/playbutton"
         app:layout_constraintEnd_toStartOf="@+id/Detalhes"
         app:layout_constraintHorizontal_bias="0.5"
@@ -146,8 +163,8 @@
 
     <Button
         android:id="@+id/MinhaLIsta"
-        android:layout_width="116dp"
-        android:layout_height="62dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:backgroundTint="@android:color/transparent"
         android:drawableTop="@drawable/rounded_add_24"
         android:text="MINHA LISTA"
@@ -161,8 +178,8 @@
 
     <Button
         android:id="@+id/Detalhes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="116dp"
+        android:layout_height="62dp"
         android:backgroundTint="@android:color/transparent"
         android:drawableTop="@drawable/baseline_info_24"
         android:padding="0dp"
@@ -174,6 +191,53 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/Assistir"
         app:layout_constraintTop_toTopOf="@+id/Assistir" />
+
+    <TextView
+        android:id="@+id/textViewLançamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Lançamento"
+        android:textColor="@color/menuNav"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/Assistir" />
+
+    <ImageView
+        android:id="@+id/imageViewBrooklin"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewTheChoosen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLançamento"
+        app:srcCompat="@drawable/brooklin1" />
+
+    <ImageView
+        android:id="@+id/imageViewTheChoosen"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBrooklin"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewJesusRevo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBrooklin"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBrooklin"
+        app:srcCompat="@drawable/thechosen1" />
+
+    <ImageView
+        android:id="@+id/imageViewJesusRevo"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewTheChoosen"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewTheChoosen"
+        app:layout_constraintTop_toTopOf="@+id/imageViewTheChoosen"
+        app:srcCompat="@drawable/jesusrevolution" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
