@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ativ3</string>
+    <string name="s_rie">Series</string>
+    <string name="minha_lista">My List</string>
+    <string name="filmes">Movies</string>
+    <string name="com_dia">Comedy</string>
+    <string name="empolgante">Exciting</string>
+    <string name="irreverente">Irreverent</string>
+    <string name="assistir">Watch</string>
+    <string name="minhalista">MY LIST</string>
+    <string name="detalhes">DETAILS</string>
+    <string name="lan_amento">Launch</string>
+</resources>

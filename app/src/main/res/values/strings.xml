@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Ativ3</string>
+    <string name="s_rie">Série</string>
+    <string name="minha_lista">Minha Lista</string>
+    <string name="filmes">Filmes</string>
+    <string name="com_dia">Comédia</string>
+    <string name="empolgante">Empolgante</string>
+    <string name="irreverente">Irreverente</string>
+    <string name="assistir">Assistir</string>
+    <string name="minhalista">MINHA LISTA</string>
+    <string name="detalhes">DETALHES</string>
+    <string name="lan_amento">Lançamento</string>
 </resources>
